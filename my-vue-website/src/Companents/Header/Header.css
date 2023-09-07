@@ -1,30 +1,34 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .Header {
-    display: flex;
-  
-    justify-content: center;
-    flex-direction: row;
-    background-color: #f3efea;
-    width: 100%;
-    height: 138px;
-  }
-  .NavHeader {
-    flex-direction: row;
-    display: flex;
-    width: 90%;
-  }
-  .UlHeader {
-    width: 80%;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    justify-content: space-around;
-  }
-  .ImgHeader {
-    mix-blend-mode: multiply;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Header {
+  display: flex;
+
+  justify-content: center;
+  flex-direction: row;
+  background-color: #f3efea;
+  width: 100%;
+  height: 138px;
+}
+.NavHeader {
+  flex-direction: row;
+  display: flex;
+  width: 90%;
+}
+.UlHeader {
+  width: 90%;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.UlHeader :nth-child(2) {
+font-size: 50px;
+}
+.ImgHeader {
+  height: 100px;
+  width: 100px;
+}

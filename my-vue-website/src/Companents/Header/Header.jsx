@@ -12,9 +12,8 @@ const Header = () => {
         <nav className="NavHeader">
           <ul className="UlHeader">
             <Link id="LINK" to='/About_me'>About me</Link>
-            <Link id="LINK" to="/"><img className="ImgHeader" src="./src/component/Img/HeaderImg/IMG_1024 1.jpg"/></Link>
+            <Link id="LINK" to="/"><p>Heorhi Shauchenko</p></Link>
             <Link id="LINK" to='/Contacts_for'>Contacts</Link>
-            <Link id="LINK" to="/My_skills">My_skills</Link>
           </ul>
         </nav>
       </div>
