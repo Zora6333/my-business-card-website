@@ -17,7 +17,18 @@ body {
   font-family: 'Open sans', sans-serif;
   font-weight: 300;
 }
-
+#NAV{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#NAV li a {
+padding-left: 200px;
+  font-size: 35px;
+  color: #588c99;
+  text-decoration: none;
+  display: flex;
+}
 .navbar a,
 .sec-about p {
   text-align: center;
@@ -100,16 +111,26 @@ a {
 
 hr {
   margin-bottom: 3em;
-  width: 7%;
+  height: 10px;
+  width: 100%;
+  animation: slideInLeft 3s ease-in-out; 
+  animation-fill-mode: forwards; 
+   background-color: #006c80;
 }
 
 /* Layout */
 .sec-folio .row {
+  width: 100%;
   margin-bottom: 3em;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .sec-folio img {
-  max-width: 100%;
+height: 450px;
+width: 450px;
+ max-width: 100%;
 }
 
 /* Header */
@@ -131,10 +152,29 @@ hr {
 }
 
 /* Main */
+
+/* Добавляем стили для анимации */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Применяем анимацию к заголовку */
+.main-heading {
+  animation: slideInLeft 1s ease-in-out; /* Длительность и функция сглаживания могут быть настроены по вашему желанию */
+  animation-fill-mode: forwards; /* Эта настройка сохранит состояние анимации после ее завершения */
+}
+
 .sec-main {
   position: relative;
-  height: 560px;
-  background: url(https://source.unsplash.com/kVf7VRgg4p8/1920x1080) no-repeat center center;
+  height: 700px;
+  background: url(https://4kwallpapers.com/images/wallpapers/mcdonald-lake-glacier-national-park-snow-covered-mountain-3840x2160-5916.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -160,6 +200,15 @@ hr {
   height: 40px;
   color: #fff;
 }
+
+.center-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 /* About */
 .sec-about a {
