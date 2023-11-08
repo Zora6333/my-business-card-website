@@ -15,7 +15,7 @@
 .NavHeader {
   flex-direction: row;
   display: flex;
-  width: 90%;
+  width: 100%;
 }
 .UlHeader {
   width: 90%;
@@ -24,6 +24,10 @@
   align-items: center;
   list-style-type: none;
   justify-content: space-around;
+}
+.UlHeader p{
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
 }
 .UlHeader :nth-child(2) {
 font-size: 50px;

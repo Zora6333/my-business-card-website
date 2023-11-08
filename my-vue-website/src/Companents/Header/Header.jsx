@@ -11,9 +11,9 @@ const Header = () => {
         </p>
         <nav className="NavHeader">
           <ul className="UlHeader">
-            <Link id="LINK" to='/About_me'>About me</Link>
-            <Link id="LINK" to="/"><p>Heorhi Shauchenko</p></Link>
-            <Link id="LINK" to='/Contacts_for'>Contacts</Link>
+            <Link id="LINK" to='/About_me'><p>About me</p></Link>
+            <Link id="LINK" to="/"><p className="High">Heorhi Shauchenko</p></Link>
+            <Link id="LINK" to='/Contacts_for'><p>Contacts</p></Link>
           </ul>
         </nav>
       </div>

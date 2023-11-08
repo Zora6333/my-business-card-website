@@ -220,7 +220,7 @@ const Main = () => {
                       id="inputName"
                       class="form-control"
                       type="text"
-                      placeholder="Adam Smith"
+                      placeholder="Georgei Shevchenko"
                       required
                     />
                   </div>
@@ -234,7 +234,7 @@ const Main = () => {
                       id="inputMail"
                       class="form-control"
                       type="email"
-                      placeholder="adam.smith@mail.com"
+                      placeholder="Georgeisevchenko@gmail.com"
                       required
                     />
                   </div>
